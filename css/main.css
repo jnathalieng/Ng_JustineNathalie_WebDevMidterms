@@ -1,0 +1,500 @@
+/* 1. General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alfa Slab One', cursive;
+  background-color: #fff;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Alfa Slab One', cursive;
+  color: #000;
+}
+h3, p {
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #f7941e;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 2. Main Nav */
+
+#main-header {
+  display: grid;
+  align-items: center;
+  padding: 10px 0;
+}
+
+#burger-toggle {
+  display: none;
+}
+
+#burger-label {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+}
+#burger-label img {
+  width: 40px;
+  height: auto;
+}
+
+#main-nav {
+  display: none;
+}
+
+#burger-toggle:checked + #burger-label + #main-nav {
+  display: block;
+  position: absolute;
+  top: 70px;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+}
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#main-nav li {
+  margin: 10px 0;
+}
+#main-nav a {
+  font-size: 20px;
+}
+
+#logo {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* 3. Main Hero Image */
+#main-banner, #character-banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#main-banner-img, #character-banner-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 4. Intro Text Section */
+#intro-text p,
+#character-intro p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+/* 5. Meet the Characters */
+
+#characters {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#characters h2 {
+  margin: 40px 0 20px 0;
+}
+
+.character-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.character-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+#info-boxes {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* 6. Video Player */
+#video {
+  width: 100%;
+}
+
+.video-wrapper {
+  grid-column: 1 / -1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.video-placeholder {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  background-color: #f5f5f5;
+  border: 2px dashed #ccc;
+  font-size: 20px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* 7. Join the Squeeze Squad */
+
+#newsletter {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+#newsletter h2 {
+  margin-bottom: 10px;
+}
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 14px;
+  width: 70%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+.newsletter-form input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #f7941e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.newsletter-form input[type="submit"]:hover {
+  background-color: #d66e00;
+}
+.disclaimer {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* 8. Footer */
+#footer {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  font-size: 14px;
+}
+.icons a img {
+  width: 24px;
+  margin: 0 10px;
+}
+
+/* t1. Main Nav */
+@media (min-width: 768px) {
+  #burger-label {
+    display: none;
+  }
+
+  #main-nav {
+    display: block !important;
+    position: static;
+  }
+
+  #main-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+
+  #main-nav a {
+    font-size: 24px;
+  }
+
+  .character-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  #main-header {
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+
+  #logo {
+    grid-column: 1 / -1; 
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  #main-nav {
+    grid-column: 1 / -1;
+    display: flex !important;
+    justify-content: center;
+  }
+
+  #main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  #main-nav a {
+    font-size: 24px;
+  }
+}
+
+/* t2. Hero Main */
+@media (min-width: 768px) {
+  #main-banner,
+  #character-banner {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-banner-img,
+  #character-banner-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* d1. Main Nav */
+@media (min-width: 1200px) {
+  #main-nav ul {
+    gap: 40px;
+  }
+
+  #logo img {
+    width: 250px;
+  }
+}
+
+/* d2. Hero Main */
+@media (min-width: 1200px) {
+  .character-preview {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+
+/* Animations */
+
+/* 1. Berry Bop */
+#Berry-Bop {
+  transition: transform 0.3s ease;
+}
+
+#Berry-Bop:hover {
+  animation: berrySweep 0.8s ease-in-out forwards;
+}
+
+#Right_Eye {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+#Right_Eye_Wink {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#Berry-Bop:hover #Right_Eye {
+  opacity: 0;
+}
+#Berry-Bop:hover #Right_Eye_Wink {
+  opacity: 1;
+}
+
+
+@keyframes berrySweep {
+  0%   { 
+    transform: translateX(0); 
+  }
+
+  50%  { 
+    transform: translateX(20px);
+   }
+
+  100% { 
+    transform: translateX(0); 
+  }
+}
+
+#Berry-Bop:hover {
+  filter: drop-shadow(0 0 12px #ff82b2);
+}
+
+
+
+/* 2. Grippy Gloop */
+#GrippyGloop:hover .wobble {
+  animation: wobble 1s ease-in-out;
+}
+@keyframes wobble {
+  0%, 100% { 
+    transform: translateX(0); 
+  }
+
+  25% { 
+    transform: translateX(-20px) rotate(-3deg);
+   }
+
+  50% { 
+    transform: translateX(20px) rotate(3deg); 
+  }
+
+  75% {
+     transform: translateX(-10px) rotate(-2deg); 
+    }
+}
+
+#GrippyGloop:hover {
+  filter: drop-shadow(0 0 12px #b084ff);
+}
+
+/* 3. Sunny Peel */
+#Sunny_Peel:hover {
+  animation: rotate360 1.5s linear;
+}
+
+@keyframes rotate360 {
+
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+#Sunny_Peel:hover {
+  filter: drop-shadow(0 0 12px #ffae42);
+}
+
+/* 4. Tiki Tango */
+#TikkiTango:hover {
+  animation: wiggleDance 1.2s ease-in-out infinite;
+}
+
+@keyframes wiggleDance {
+  0% { 
+    transform: rotate(0deg); 
+  }
+
+  10% { 
+    transform: rotate(4deg); 
+  }
+
+  20% {
+     transform: rotate(-4deg); 
+    }
+
+  30% { 
+    transform: rotate(5deg); 
+  }
+
+  40% { 
+    transform: rotate(-5deg); 
+  }
+
+  50% {
+     transform: rotate(6deg); 
+    }
+
+  60% {
+     transform: rotate(-6deg);
+     }
+
+  70% {
+     transform: rotate(4deg); 
+    }
+
+  80% {
+     transform: rotate(-4deg);
+     }
+
+  90% { 
+    transform: rotate(2deg); 
+  }
+
+  100% { 
+    transform: rotate(0deg); 
+  }
+}
+
+#TikkiTango:hover {
+  filter: drop-shadow(0 0 12px #ffc247);
+}
+
+/* 5. Apple Dabble */
+#Apple_Dabble:hover {
+  animation: appleBounce 0.5s ease-out infinite alternate;
+}
+
+@keyframes appleBounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-20px) scale(1.1);
+  }
+}
+
+#Apple_Dabble:hover {
+  filter: drop-shadow(0 0 12px #ff6b6b);
+}
+
+/* 6. Mysti Swirl */
+#Mysti_Swirl:hover {
+  animation: fastPulse 0.4s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes fastPulse {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 6px #ffc2e0);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 24px #ff94ca);
+    opacity: 1;
+  }
+}
