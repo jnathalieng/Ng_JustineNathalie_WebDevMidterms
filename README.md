@@ -1,22 +1,31 @@
 ## Squeezeit Webpage (Homepage, and Character Page) 
-This project features a responsive, grid-based website designed for the Squeezit brand, including both a homepage and a character page. It includes a custom set of six branded, scalable SVG icons—each representing a unique character flavor—originally created in Adobe Illustrator. The layout is built with a responsive grid system to ensure optimal viewing across all screen sizes.
+SqueezeIt Website Project (Homepage & Character Page)
+This project showcases a fully responsive, grid-based website developed for the SqueezeIt brand. It includes two completed HTML5 pages: a Homepage and a Character Page, both built using semantic HTML tags and a responsive CSS Grid layout. The site is designed to scale and adapt across all screen sizes, ensuring an optimal user experience on mobile, tablet, and desktop devices.
 
-## Character Icons
-Berry Bop – a strawberry-banana flavored character
-Grippy Gloop – grape flavor with a gooey personality 
-Tiki Tango – tropical pineapple mango combo 
-Sunny Peel – bright and citrusy orange 
-Mysti Swirl – four-seasons flavor with a magical swirl 
-Apple Dabble – sweet and classic apple design
+The character page features six original, scalable SVG icons—each representing a unique juice-themed character—created in Adobe Illustrator and styled with CSS animations.
+
+Featured Characters
+Berry Bop – A sweet strawberry-banana blend with playful vibes
+
+Grippy Gloop – A gooey grape-flavored character full of personality
+
+Tiki Tango – A tropical pineapple-mango mix with energetic flair
+
+Sunny Peel – A bright, citrusy orange character full of sunshine
+
+Mysti Swirl – A magical four-seasons swirl with dreamy flavor
+
+Apple Dabble – A classic, cheerful apple-inspired design
 
 
 ## Installation
-No Installation required. 
-Download Zip File and Extract
+No installation required.
+Download the ZIP file and extract its contents.
 
 ## Usage
-Open index.html in your browser. Scroll down and Browse the Meet the characters Page.
-Hover over each character to see some animations.
+Open index.html in any modern web browser.
+Scroll through the homepage to view the layout and animations.
+Explore the "Meet the Characters" section for interactive hover effects.
 
 
 ## Contributing
