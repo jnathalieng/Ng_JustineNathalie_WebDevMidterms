@@ -7,15 +7,15 @@ The character page features six original, scalable SVG icons—each representing
 Featured Characters
 Berry Bop – A sweet strawberry-banana blend with playful vibes
 
-Grippy Gloop – A gooey grape-flavored character full of personality
+Wiggle Bop – A gooey grape-flavored character full of personality
 
-Tiki Tango – A tropical pineapple-mango mix with energetic flair
+Mango Mambo – A tropical pineapple-mango mix with energetic flair
 
-Sunny Peel – A bright, citrusy orange character full of sunshine
+Sunny Twist – A bright, citrusy orange character full of sunshine
 
-Mysti Swirl – A magical four-seasons swirl with dreamy flavor
+Mystie Swirl – A magical four-seasons swirl with dreamy flavor
 
-Apple Dabble – A classic, cheerful apple-inspired design
+Apple Wobble – A classic, cheerful apple-inspired design
 
 
 ## Installation
